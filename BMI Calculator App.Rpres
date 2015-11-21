@@ -1,0 +1,47 @@
+The BMI Calculator App
+========================================================
+author: Siva Sethu
+date: 21 November 2015
+
+
+========================================================
+
+# Importance of BMI
+
+- The body mass index (BMI) is a value derived from the mass (weight) and height of an individual 
+- The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value
+- Commonly accepted BMI ranges are underweight: under 18.5, normal weight: 18.5 to 25, overweight: 25 to 30, obese: over 30
+- Understanding BMI is important, as it will help an individual in determining whether they are of normal or overweight / obese and take actions to lead a healthy life
+
+========================================================
+
+# About BMI calculator App
+- Feeling the need for a robust app for calculation of BMI & understand the weight category, the BMI calculator App has been developed
+- The App is developed using Shiny
+- The App takes your Age, Sex, Height & Weight as input and then calculates the BMI and also displays your weight category based on the calculated BMI
+- The BMI calculation is based on internationally recognized Metric units and hence the height should be entered in centimeters, while the weight should be entered in kilograms
+
+========================================================
+
+## Technical details
+- The formula used to calculate BMI is weight/(height)^2 and the unit is Kg/m^2
+- For example, assume the user enters a weight of 88 Kilograms and a height of 175 centimeters, the calculation is done as below
+```{r}
+weight <- 88
+height <- 175
+BMI <- weight/height ^ 2 * 10000
+BMI
+```
+The calculated BMI for the provided inputs is *`r round(BMI,2) `*  
+
+========================================================
+
+## The BMI calculator - First Step to healthy Life
+![Screenshot the App](BMI App.png)
+
+The Application is very user friendly and details about the application is provided under the help section in the main screen. Please try out the application for yourself and take actions to keep your BMI under control and have a Healthly Life !!!
+Thank You.
+
+
+
+
