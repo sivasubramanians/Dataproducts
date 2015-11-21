@@ -1,4 +1,4 @@
-## UI for BMI calculator Application
+## UI code for BMI calculator Application
 ## Author: Siva Sethu
 
 shinyUI(pageWithSidebar(
